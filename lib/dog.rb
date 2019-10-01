@@ -11,6 +11,10 @@ class Dog
     @@all << self
   end
   
+  def name
+    @name
+  end
+  
   def self.all
     @@all
   end
@@ -20,7 +24,7 @@ class Dog
   end
   
   def self.print_all
-    puts @@all.collect { |instance| instance.to_s }
+    puts @@all.collect { |instance| instance.name }
   end
   
   
