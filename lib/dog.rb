@@ -6,13 +6,13 @@ class Dog
   
   @@all = []
   
-  def self.save(i)
+  def save(i)
     @@all << i
   end
   
   def initialize(name)
     @name = name
-    self.save(name)
+    @@all << self
   end
   
   def name
