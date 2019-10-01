@@ -21,7 +21,7 @@ class Dog
   
   def self.print_all
     binding.pry
-    puts @all
+    puts @all.to_s
   end
   
   
