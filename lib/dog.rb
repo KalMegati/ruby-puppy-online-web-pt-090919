@@ -20,7 +20,7 @@ class Dog
   end
   
   def self.print_all
-    puts @@all.each { |instance| instance.to_s }
+    puts @@all.collect { |instance| instance.to_s }
   end
   
   
